@@ -1,0 +1,52 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "profile interests learn"
+    "expectations . .";
+  background: #fcdada;
+}
+
+p {
+  margin: 0.7em 0;
+}
+
+.Expectations {
+  padding: 2em;
+  background-color: #794c74;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: expectations;
+}
+
+.Interests {
+  background-color: #fadcaa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: interests;
+  padding: 2em;
+}
+
+.Learn {
+  background-color: #b2deec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: learn;
+  padding: 2em;
+}
+
+.Profile {
+  background-color: #c56183;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: profile;
+  padding: 2em;
+}
